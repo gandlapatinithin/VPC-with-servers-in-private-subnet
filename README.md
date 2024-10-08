@@ -142,15 +142,15 @@ Use the following procedure to create a VPC with a public subnet and a private s
 
     html:
 
-   <!DOCTYPE html>
+   "<!DOCTYPE html>
    <html>
    <body>
 
-   <h1>My First AWS PROJECT demonstrating apps in a private subnet</h1>
-   <p>Congratulations on first instance!!!</p>
+   <h1>This is a AWS project </h1>
+   <p>first instance in private subnet</p>
 
    </body>
-   </html>
+   </html>"
    *To save and exit the file, press Esc, type :wq!, and press Enter.
 
 7. Start a Simple HTTP Server
