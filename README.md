@@ -1,2 +1,6 @@
 # VPC-with-servers-in-private-subnet
-VPC with servers in private subnets and NAT and routing into them with bastian host.
+This project showcases the creation of a highly resilient and secure Virtual Private Cloud (VPC) designed for production environments. The architecture spans two Availability Zones to ensure high availability and includes Auto Scaling groups and an Application Load Balancer (ALB) to provide scalability and fault tolerance. For enhanced security, the application servers are deployed in private subnets, with external traffic routed through the ALB in the public subnets.
+
+To enable outbound internet access from the private servers, a Network Address Translation (NAT) gateway is deployed in each Availability Zone, ensuring availability and fault tolerance. Public subnets host both the NAT gateways and the load balancer, while private subnets house the server instances.
+
+Additionally, a Bastion host is deployed in a public subnet to facilitate secure communication with the private servers. Administrators can connect to the Bastion host to access instances in the private subnets, ensuring secure management without exposing private servers directly to the internet. This architecture balances security, scalability, and resilience for a robust production environment.
